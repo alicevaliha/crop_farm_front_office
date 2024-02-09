@@ -1,0 +1,41 @@
+ .recherche_component {
+    width: 90%;
+    height: 50px;
+    /* background: white; */
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5%;
+    /* justify-content: space-; */
+
+  }
+    .recherche_component h3 {
+    width: 90%;
+    height: 30px;
+    margin: auto;
+    margin-bottom: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    color: white;
+    /* background: rgb(255, 255, 255); */
+      }
+    .recherche_component form {
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+    height: 50px;
+ 
+  }
+  .recherche_component form .text_input{
+    border: 3px solid #d7d5a7;
+    border-radius: 22px;
+    height: 105%;
+    padding-left: 10px;
+    text-align: left;
+    width: 90%;
+  }
+   
+  
+  .recherche_component form .submit_input{
+   width: 8%;
+   
+  }

@@ -1,0 +1,57 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   }
+   
+
+   .container_box_message_receiver {
+   margin-bottom: 3%;
+   }
+   .container_box_message_receiver .box_message_receiver{
+    width: 100%;
+    height: auto;
+    /* background: purple;  */
+    display: flex;
+    /* flex-direction: row-reverse;   */
+   }
+   .container_box_message_receiver .box_message_receiver .sary_box_message_receiver{
+    margin: auto;
+    margin-right: 4%;
+    margin-left: 7px;
+    height: 45px;
+    width: 45px;
+    border-radius: 100%;
+    overflow: hidden;
+    /* background: palevioletred;display: flex; */
+    align-self: flex-start;
+    margin: 10px;
+
+   }
+
+   .container_box_message_receiver .box_message_receiver .sary_box_message_receiver img{
+    border-radius: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    align-self: start;
+   }
+
+   .container_box_message_receiver .box_message_receiver .contenu_box_message_receiver{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+    background: white;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: center;
+    margin: auto;
+    padding: 10px;
+    width: 85%;
+   }
+
+   .container_box_message_receiver .box_message_receiver .contenu_box_message_receiver p{
+   color: black;
+   /* background: green; */
+   width: 85%;
+   word-break: break-all;
+   }
+

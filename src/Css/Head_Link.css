@@ -1,0 +1,42 @@
+.information {
+    /* width: 60%; */
+    height: 40px;
+    display: flex;
+    /* justify-content: space-between; */
+    
+  }
+  .information :hover {
+  opacity: 80%;
+  }
+ .information .sary {
+    background: #8BC462;
+    width: 40px ;
+    height: 40px ;
+    border-radius: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+.sary img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+  }
+.information .texte {
+  margin-left: 15px;
+    width: 90%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
+ .information .texte h3 {
+    color:  #8BC462;
+   
+  }
+
+  .information .texte a {
+    text-decoration: none;
+   
+  }

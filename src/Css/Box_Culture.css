@@ -1,0 +1,68 @@
+
+
+* {
+  margin :0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+
+.box_culture {
+    flex: 0 0 auto;
+    /*Ajuster ce width pour modifier les liste de cultures de l'acceuil " */
+    /* width: 20%; */
+    height: 95%;
+    border-radius: 20px;
+    overflow: hidden; 
+    border: 8px solid white;
+    position: relative;
+    
+  }
+
+  
+    .box_culture img {
+    width: 100%;
+    height: 100% ;
+    object-fit: cover;
+    border-radius: 15px;
+      
+    }
+
+    .box_culture .box_culture_body{
+      width: 100%;
+      height: 100% ;
+      top: 0;
+      right: -100%;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: absolute;
+      background: #1f3d4738;
+      backdrop-filter: blur(5px); 
+      border-radius: 15px;
+      color: white;
+      transition: 1s;
+
+      
+    }
+
+    .box_culture:hover .box_culture_body{
+      right: 0;
+
+    }
+
+.box_culture h4 {
+  font-size: 15px;
+  font-weight: 400;
+  }
+
+.box_culture p {
+
+    width: 70%;
+    font-size: 1vw;
+    white-space:nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  

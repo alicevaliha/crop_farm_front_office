@@ -1,0 +1,151 @@
+*{
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.main {
+height: 100vh;
+margin: 0;
+/*background: rebeccapurple;*/
+display: flex;
+justify-content: center;
+align-items: center;
+position: relative;
+}
+
+
+.main .image_login {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute; /* Positionnez l'image en tant que fond */
+  top: 0;
+  left: 0;
+  z-index: -1; /* Assurez-vous que l'image est en arrière-plan */
+}
+
+
+.main .box_container {
+width: 60%;
+height: 50%;
+/* background: red; */
+display: flex;
+justify-content: space-between;
+}
+
+.main .box_container .left_box {
+  margin-right: 50px;
+    width: 60%;
+    height: 100%;
+    background: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:center;
+    border-radius: 30px;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+    /* background-image: url('../../public/Image_Terrain/leaf.gif'); */
+    /* box-shadow: 0 0 0 3px #8bc46236; */
+}
+
+.main .box_container .left_box .titre{
+display: flex;
+/* align-items: flex-start; */
+width: 80%;
+
+}
+
+.main .box_container .left_box .titre h1{
+color: #438812;
+font-size: 4vw;
+margin: 0;
+ }
+ .main .box_container .left_box p{ 
+    width: 80%;
+    font-size: 3vw;
+    line-height: 1;
+ }
+
+.right_box{
+  
+  align-items: center;
+  background: #458a145e;
+  border-radius: 30px;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  transition: transform .3s ease-in-out;
+  width: 40%;
+  color: white;
+    
+  }
+  
+  .login_form {
+    width: 80%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+.login_form .input_container label {
+    margin-bottom: 20px;
+  }
+  
+  .login_form .input_container input {
+    padding: 8px;
+    margin-top: 5px ;
+    margin-bottom: 16px;
+    border-radius: 9px;
+    width: 100%;
+    border: none;
+  }
+  
+  .login_form .button-container {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* background: blue;  */
+  }
+  
+  .login_form .button-container  .submit_button{
+    margin: 0 8px;
+    padding: 8px 16px;
+    border-radius: 30px;
+    border: 1px solid white;
+    cursor: pointer;
+    background-color: white;
+  }
+  
+  .login_form .button-container a{
+    margin: 0 8px;
+    padding: 8px 16px;
+    border-radius: 30px;
+    border: 1px solid white;
+  }
+
+  .login_form .button-container a {
+    text-decoration: none;
+    color: white;
+    text-align:center;
+  }
+
+  .login_form .button-container :hover {
+   background: rgb(240, 234, 234);
+   backface-visibility: 50%;
+   color: black;
+  }
+
+
+
+.main .box_container .left_box,
+.main .box_container .right_box {
+  transition: transform 0.3s ease-in-out; /* Ajoute une transition sur la transformation */
+}
+
+.main .box_container .left_box:hover,
+.main .box_container .right_box:hover {
+  transform: scale(1.2); /* Effet d'agrandissement au survol */
+}

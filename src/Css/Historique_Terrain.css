@@ -1,0 +1,189 @@
+body {
+    padding: 0;
+    margin: 0;
+  }
+  
+  #historique_page {
+    width: 100%;
+    height: 100vh;
+    min-height: 750px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #historique_page main {
+    width: 94%;
+    height: 650px;
+    margin: auto;
+    margin-top: 2%;
+    display: flex;
+    gap: 20px;
+  }
+
+  #historique_page main .section_list_terrain {
+        width: 65%;
+        height: 95%;
+        border-radius: 20px;
+        /* background: rgb(233, 37, 37);  */
+        box-shadow: -5px 5px #3a860462, -10px 10px #3a860442, -15px 15px #3a86042f, -20px 20px #3a860417, -25px 25px #3a860402;
+        border: 1px solid rgb(228 228 228 / 57%);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding-left: 2%;
+        overflow: auto;
+        scrollbar-width: thin; /* Pour Firefox */
+        scrollbar-color: #8BC462 #f0f0f0; /* Couleur de la barre et du fond de la barre pour Firefox */
+
+    /* Styles spécifiques pour WebKit (Chrome, Safari) */
+    &::-webkit-scrollbar {
+        width: 8px; /* Largeur de la barre de défilement */
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: #8BC462; /* Couleur de la poignée de la barre de défilement */
+    }
+
+    &::-webkit-scrollbar-track {
+        background-color: #f0f0f0; /* Couleur du fond de la barre de défilement */
+    }
+        
+  }
+  
+  #historique_page main .section_list_terrain .top_list_terrain{
+    width: 80%;
+    height: 10%;
+    /* background: blue;  */
+  }
+  
+  #historique_page main .section_list_terrain .top_list_terrain h1{
+  font-size: 4vw;
+  margin: 0;
+  }
+
+
+
+
+  #historique_page main .section_list_terrain .bottom_list_terrain{
+    width: 97%;
+    height: 70%;
+    /* background: rgb(112, 112, 226); */
+    display: grid;
+    grid-template-columns: repeat(3,1fr); /* Colonnes de taille minimale 200px, s'adaptant à la largeur disponible */
+    gap: 20px; /* Espacement entre les cartes */
+    
+  }
+
+
+
+  #historique_page main .section_recherche_terrain {
+    width: 30%;
+    height: 95%;
+    border-radius: 20px;
+    box-shadow: 0 0 0 3px #8bc46236;
+    background-image: url('../../public/Image_Terrain/bois.gif');
+    /* background-image: ; */
+    /* background: rgb(233, 37, 37);  */
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 2%;
+}
+
+#historique_page main .section_recherche_terrain .head_link {
+ width: 80%;
+ height: auto;
+ /* background: purple; */
+}
+
+#historique_page main .section_recherche_terrain  .head_title  {
+    width: 80%;
+    height: auto;
+    /* background: rgb(245, 241, 38); */
+}
+#historique_page main .section_recherche_terrain  .head_title h1 {
+   font-size: 3vw;
+   margin: 0;
+   line-height: 1;
+   
+}
+
+#historique_page main .section_recherche_terrain  .body_recherche_terrain{
+    width: 90%;
+    height: 50%;
+    /* background: blue; */
+    
+    
+    /* background: rgb(16, 162, 230); */
+}
+
+#historique_page main .section_recherche_terrain  .body_recherche_terrain .formulaire_recherche{
+  /* background: blue; */
+  width: 100%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  /* background: purple; */
+ }
+
+ #historique_page main .section_recherche_terrain  .body_recherche_terrain .formulaire_recherche .text_input{
+    border-radius: 12px;
+    height: 17%;
+    padding-left: 10px;
+    text-align: left;
+    width: 90%;
+    border: solid 3px #d7d5a7;
+ }
+ 
+ #historique_page main .section_recherche_terrain  .body_recherche_terrain .formulaire_recherche .submit_input{
+  color: white;
+  width: 90%;
+  background: #8bc462;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-transform: capitalize;
+  border: none;
+  outline: none;
+  font-weight: 500;
+  cursor: pointer;
+ }
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#historique_page main .section_recherche_terrain .body_a_remplir {
+    width: 80%;
+    height: 40%;
+    /* background: rgb(226, 132, 8); */
+}
+
+#historique_page main .section_recherche_terrain .bottom_link  {
+    width: 90%;
+    height: auto;
+    /* background: rgb(218, 63, 148); */
+}

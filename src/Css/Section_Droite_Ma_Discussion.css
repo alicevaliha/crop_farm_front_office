@@ -1,0 +1,76 @@
+*   {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    }
+    .section_liste {
+        border-radius: 30px;
+        width: 35%;
+        height: 95%; 
+        /* background:rgb(190, 128, 128); */
+        /* border: 1px solid black; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        box-shadow: 0 0 0 3px #8bc46236;
+       
+        
+      }
+     
+      .section_liste .top{
+        height: 95%;
+        overflow: auto;
+        scrollbar-width: thin; /* Pour Firefox */
+        scrollbar-color: #ccc #f0f0f0; /* Couleur de la barre et du fond de la barre pour Firefox */
+
+        /* Styles spécifiques pour WebKit (Chrome, Safari) */
+        &::-webkit-scrollbar {
+            width: 8px; /* Largeur de la barre de défilement */
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: #8BC462; /* Couleur de la poignée de la barre de défilement */
+        }
+
+        &::-webkit-scrollbar-track {
+            background-color: #f0f0f0; /* Couleur du fond de la barre de défilement */
+      
+            /* background: blue; */
+            
+          }
+    }
+
+  
+    
+      .section_liste .mini_titre {
+        margin: auto;
+        width: 90%;
+        height: auto;
+        min-height: 40px;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        
+      }
+      .section_liste .mini_titre h3 {
+      color: #8BC462;
+      }
+    
+      .section_liste .all_liste_ma_discussion {
+        margin-left: 20px;
+        width: 90%;
+        height: auto;
+        display: flex;
+        flex-direction: column-reverse;
+        /* background: red;  */
+    
+
+      }
+      
+      .section_liste .bottom {
+        width: 100%;
+        height: 10%;
+        padding-left: 20px;
+        background: white;
+        display: flex;
+        margin: 0;
+
+      }

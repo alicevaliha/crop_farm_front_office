@@ -1,0 +1,96 @@
+.carte_terrain {
+    border: 8px solid #fff;
+    border-radius: 20px;
+    display: grid;
+    grid-template-rows: 17% auto 17%;
+    height: 287px;
+    overflow: hidden;
+    position: relative;
+    width: 103%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  }
+
+  .carte_terrain img {
+
+    width: fit-content;
+
+  }
+  
+
+
+  .carte_terrain .carte_top {
+    /* background: rgb(27, 201, 24); */
+    height: 20%;
+    margin-top: -15%;
+    padding-left: 5%;
+  }
+
+  .carte_terrain .carte_top h3 {
+    margin-top: 9%;
+    color: white;
+  }
+  
+  .carte_terrain .carte_body {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: -100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    background: #1f3d4738;
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    color: white;
+    transition: 1s;
+  }
+  
+  .carte_terrain:hover .carte_body {
+    right: 0;
+  }
+  
+  .carte_terrain .carte_body h4 {
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 400;
+  }
+  
+  .carte_terrain .carte_body button {
+    color: white;
+    width: 100%;
+    background: #8bc462;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  
+  .carte_terrain .carte_body button:hover {
+    opacity: 0.75;
+  }
+  
+  .carte_terrain .carte_bottom {
+    
+    background:#7cb357;
+    display: flex;
+    justify-content: space-around;
+    padding: 1%;
+    height: 100%;
+  }
+  .carte_terrain .carte_bottom img{
+    background: #ddec04;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+  }
+  .carte_terrain .carte_bottom h3{
+    /* background: rgb(68, 16, 157); */
+    color: #fff;
+    margin-top: 1%;
+    width: 84%;
+  }
