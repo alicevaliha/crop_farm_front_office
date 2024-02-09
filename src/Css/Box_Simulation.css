@@ -1,9 +1,9 @@
 .box_simulation {
-    width: 90%;
-    height: 800px;
-    margin: 0 auto 0 0;
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  height: 808px;
+  margin: 0 auto 0 0;
+  width: 125%;
   }
   .box_simulation .child_box {
     margin-top: 4%;

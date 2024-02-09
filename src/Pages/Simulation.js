@@ -1,23 +1,41 @@
-import React from 'react'
+import React, { useEffect, useState } from "react";
+import axios from 'axios';
 import Header from '../Components/Header'
 import Data_Simulation from '../Data/Data_Simulation'
 import Box_Simulation from '../Components/Box_Simulation'
-import Head_Link from '../Components/Head_Link'
-import { useState } from 'react'
+import Head_Link from '../Components/Head_Link'     
 import '../Css/Simulation.css';
 
 function Simulation() {
 const [data_simulation,setData_Simulation] = useState(Data_Simulation)
 
+useEffect(() => {
+
+  const storedId = localStorage.getItem("userId");
+  let request = "https://cropfarmback-production.up.railway.app/planters/simulations/";
+  request += storedId;
+  
+  console.log(request);
+
+  axios.get(request)
+  .then(response => {
+    // Mettez à jour l'état avec les données récupérées depuis l'API
+    setData_Simulation(response.data)
+  })
+  .catch(error => {
+    console.log('Erreur lors de la récupération des terrains non valides :', error);
+  });
+  
+}, []);
+
 const All_Simulation = data_simulation.map((simulation) => (
     <Box_Simulation
-      titre={simulation.titre }
-      petitTitre_1={simulation.petitTitre_1}
-      paragraphe_1={simulation.paragraphe_1}
-      paragraphe_1_2={simulation.paragraphe_1_2}
-      petitTitre_2 = {simulation.petitTitre_2 }
-      paragraphe_2 = {simulation.paragraphe_2 }
-      paragraphe_2_1 = {simulation.paragraphe_2_1}
+      titre={simulation.id_terrain}
+      paragraphe_1={simulation.id_parcelle}
+      paragraphe_1_2={simulation.surfacetotale}
+      paragraphe_2 = {simulation.rendement }
+      paragraphe_2_1 = {simulation.nom_plante}
+      paragraphe_2_3 = {simulation.dateaction}
     />
   ));
 
@@ -46,7 +64,7 @@ const All_Simulation = data_simulation.map((simulation) => (
                       type="text"
                       value=""
                       onChange=""
-                      placeholder="Placer votre texte ici"
+                      placeholder="De quel Terrain voulez vous connaitre les simulations"
                         />
                       <input 
                       className="text_input"

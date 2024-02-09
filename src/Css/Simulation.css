@@ -119,11 +119,12 @@ body {
  }
 
  #simulation_page main .section_recherche_simulation  .body_recherche_simulation .formulaire_recherche_simulation .text_input{
-  width: 90%;
+  border: 3px solid #d7d5a7;
+  border-radius: 12px;
   height: 17%;
-  border-radius: 5px;
   padding-left: 10px;
   text-align: left;
+  width: 90%;
  }
  
  #simulation_page main .section_recherche_simulation  .body_recherche_simulation .formulaire_recherche_simulation .submit_input{

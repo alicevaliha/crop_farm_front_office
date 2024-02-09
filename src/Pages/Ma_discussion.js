@@ -122,7 +122,7 @@ function Ma_discussion(props) {
         <section className="section_liste">
           <div className='top' ref={topRef}>
             <div className="mini_titre">
-              <h3>{nomAmi} {prenomAmi}</h3>
+              <h3>{nomAmi}</h3>
             </div>
             <div className="all_liste_ma_discussion">
               {All_message}
