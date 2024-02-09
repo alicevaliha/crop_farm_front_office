@@ -5,10 +5,13 @@ import user from './img_component/user.jpeg';
 
 function Header() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [username, setUsername] = useState("");
 
   useEffect(() => {
     const storedId = localStorage.getItem("userId");
+    const use = localStorage.getItem("username");
     setIsLoggedIn(!!storedId);
+    setUsername(use);
   }, []);
 
   useEffect(() => {
@@ -33,6 +36,7 @@ function Header() {
           {/* <li><a href="recherche_terrain">Resultat</a></li> */}
         </ul>
         <div className="profile">
+        {isLoggedIn && <p> {username}  </p>}
           <img src={user} alt=""/>
         </div>
       </nav>

@@ -27,7 +27,8 @@ function Mes_Messages() {
   useEffect(() => {
 
     let storedId = localStorage.getItem("userId");
-    let request = "https://cropfarmback-production.up.railway.app/proprietaires";
+    let request = "https://cropfarmback-production.up.railway.app/proprietaires/amis/";
+    request+= storedId;
     
     console.log(request);
 
