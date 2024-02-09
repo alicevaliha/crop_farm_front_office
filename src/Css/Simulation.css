@@ -1,0 +1,151 @@
+body {
+    padding: 0;
+    margin: 0;
+  }
+  
+  #simulation_page {
+    width: 100%;
+    height: 100vh;
+    min-height: 750px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #simulation_page main {
+    width: 94%;
+    height: 650px;
+    margin: auto;
+    display: flex;
+    gap: 20px;
+  }
+
+  #simulation_page main .section_list_simulation {
+       
+    border: 1px solid #e4e4e491;
+    border-radius: 20px;
+    box-shadow: -5px 5px #3a860462, -10px 10px #3a860442, -15px 15px #3a86042f, -20px 20px #3a860417, -25px 25px #3a860402;
+    display: flex;
+    flex-direction: column;
+    height: 95%;
+    justify-content: space-around;
+    overflow: auto;
+    padding-left: 2%;
+    scrollbar-color: #8bc462 #f0f0f0;
+    scrollbar-width: thin;
+    width: 65%;
+    /* Styles spécifiques pour WebKit (Chrome, Safari) */
+    &::-webkit-scrollbar {
+        width: 8px; /* Largeur de la barre de défilement */
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: #8BC462; /* Couleur de la poignée de la barre de défilement */
+    }
+
+    &::-webkit-scrollbar-track {
+        background-color: #f0f0f0; /* Couleur du fond de la barre de défilement */
+    }
+        
+  }
+  
+  #simulation_page main .section_list_simulation .top_list_simulation{
+    width: 80%;
+    height: 10%;
+    /* background: blue;  */
+  }
+  
+  #simulation_page main .section_list_simulation .top_list_simulation h1{
+  font-size: 4vw;
+  margin: 0;
+  }
+
+
+  #simulation_page main .section_list_simulation .bottom_list_simulation{
+    width: 97%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+
+
+  #simulation_page main .section_recherche_simulation{
+    color: white;
+    background-image: url('../../public/Image_Terrain/poisson.gif');
+    border-radius: 20px;
+    box-shadow: 0 0 0 3px #8bc46236;
+    display: flex;
+    flex-direction: column;
+    height: 95%;
+    justify-content: space-around;
+    padding-left: 2%;
+    /* width: 100%; */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+#simulation_page main .section_recherche_simulation  .head_title  {
+    width: 80%;
+    height: auto;
+    /* background: rgb(245, 241, 38); */
+}
+#simulation_page main .section_recherche_simulation  .head_title h1 {
+   font-size: 3vw;
+   margin: 0;
+   line-height: 1;
+   
+}
+
+#simulation_page main .section_recherche_simulation  .body_recherche_simulation{
+    width: 90%;
+    height: 50%;
+    /* background: blue; */
+    
+    
+    /* background: rgb(16, 162, 230); */
+}
+
+#simulation_page main .section_recherche_simulation  .body_recherche_simulation .formulaire_recherche_simulation{
+  /* background: blue; */
+  width: 100%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  /* background: purple; */
+ }
+
+ #simulation_page main .section_recherche_simulation  .body_recherche_simulation .formulaire_recherche_simulation .text_input{
+  width: 90%;
+  height: 17%;
+  border-radius: 5px;
+  padding-left: 10px;
+  text-align: left;
+ }
+ 
+ #simulation_page main .section_recherche_simulation  .body_recherche_simulation .formulaire_recherche_simulation .submit_input{
+  color: white;
+  width: 90%;
+  background: #8bc462;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-transform: capitalize;
+  border: none;
+  outline: none;
+  font-weight: 500;
+  cursor: pointer;
+ }
+ 
+ #simulation_page main .section_recherche_simulation  .body_recherche_simulation .formulaire_recherche_simulation .submit_input:hover{
+   opacity: 80%;
+   }
+
+
+#simulation_page main .section_recherche_simulation .bottom_link  {
+    width: 90%;
+    height: auto;
+    /* background: rgb(218, 63, 148); */
+}

@@ -32,7 +32,7 @@ function Header() {
           <li><a href={isLoggedIn ? "message" : "login"}>{isLoggedIn ? "Messages" : "Messages"}</a></li>
           <li><a href="historique">Recherche</a></li>
           <li><a href={isLoggedIn ? "logout" : "login"}>{isLoggedIn ? "Logout" : "Login"}</a></li>
-          {isLoggedIn && <li><a href="historique">Simulations</a></li>}
+          {isLoggedIn && <li><a href="simulation">Simulations</a></li>}
           {/* <li><a href="recherche_terrain">Resultat</a></li> */}
         </ul>
         <div className="profile">

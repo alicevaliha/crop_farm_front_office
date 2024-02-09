@@ -10,6 +10,7 @@ import Login from './Pages/Login';
 import Historique_Terrain from './Pages/Historique_Terrain'
 import Resultat_Recherche_Terrain from './Pages/Resultat_Recherche_Terrain'
 import Ma_discussion from './Pages/Ma_discussion';
+import Simulation from './Pages/Simulation';
 
 const router = createBrowserRouter ([
   {
@@ -35,6 +36,10 @@ const router = createBrowserRouter ([
   {
     path : "historique",
     element: <Historique_Terrain/>,
+  },
+  {
+    path : "simulation",
+    element: <Simulation/>,
   },
   {
     path : "recherche_terrain",
