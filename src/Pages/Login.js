@@ -81,10 +81,10 @@ function Login() {
                 <form className='login_form' onSubmit={handleSubmit}>
                     <div className="input_container">
                     <label htmlFor="email">Email:</label>
-                    <input type="email" id="email" name="email" placeholder="Votre email" value={email} onChange={handleEmailChange}/>
+                    <input type="email" id="email" name="email" placeholder="alicia@gmail.com" value={email} onChange={handleEmailChange} defaultValue="alicia@gmail.com"/>
 
                     <label htmlFor="password">Mot de passe:</label>
-                    <input type="password" id="password" name="password" placeholder="Votre mot de passe" value={password} onChange={handlePasswordChange}/>
+                    <input type="password" id="password" name="password" placeholder="mdpalicia" value={password} onChange={handlePasswordChange} defaultValue="mdpalicia"/>
 
                     </div>
                     
